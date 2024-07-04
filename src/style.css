@@ -21,6 +21,11 @@
   height: 430px;
   background: url(../public/countdown.svg) center center no-repeat;
 }
+.heart{
+  width: 50px;
+  height: 50px;
+  background: url(../public/heart.svg);
+}
 .portada {
   width: 100%;
   background-image: url(../public/portada.jpg);
