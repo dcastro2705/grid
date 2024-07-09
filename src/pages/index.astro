@@ -1,5 +1,6 @@
 ---
-
+import '@fontsource/parisienne';
+import '@fontsource/poppins';
 ---
 
 <html lang="en">
@@ -8,9 +9,38 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="src/style.css">
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		</div>
+		  <!--Reloj--> 
+		  <div class="flex items-center justify-center text-center [background:radial-gradient(125%_125%_at_70%_10%,#fff_40%,#ffcc99_100%)]">
+			<div class="countdown">
+			  <div class="mt-11">
+				<h2 style="color: #EABE3F; font-size: 80px; font-family: parisienne;">Falta</h2>
+			  </div>
+			  <div class="pr-3 animate-fade-right">
+				<span id="days" style="color: #EABE3F; font-size: 40px; font-family: poppins;"></span>
+				<span style="font-size: 18px;">Días</span>
+			  </div>
+			  <div class="pr-3">
+				<span id="hours" style="color: #EABE3F; font-size: 40px; font-family: poppins;"></span>
+				<span style="font-size: 18px;">Horas</span>
+			  </div>
+			  <div>
+				<span id="minutes" style="color: #EABE3F; font-size: 40px; font-family: poppins;"></span>
+				<span style="font-size: 18px;">Minutos</span>
+			  </div>   
+			  <div>
+				<lord-icon src="https://cdn.lordicon.com/zjhryiyb.json" trigger="loop" delay="3000" state="morph-glitter" style="width:100px;height:100px"></lord-icon>
+			  </div>
+			</div>
+		  <!--End-Reloj--> 
+		 
+		<!--Javascript--> 
+		<script src="../../src/js/countdown.js"></script>
+		<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+		<script src="https://cdn.lordicon.com/lordicon.js"></script>  
 	</body>
 </html>
